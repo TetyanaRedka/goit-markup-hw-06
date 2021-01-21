@@ -399,39 +399,45 @@
 
   <!------------ Модальное окно ---------->
   <div class="backdrop is-hidden" data-modal>
-    <form action="" class="modal">
+    <form action="#" class="modal">
       <h2>Оставьте свои данные, мы вам перезвоним</h2>
       <label class="modal-block">
-        <span> Имя</span>
-        <input type="text" name="name" placeholder="" autofocus>
-        <svg>
-          <use href="./img/icon/sprite.svg#icon-people"></use>
-        </svg>
+        Имя
+        <span>
+          <input type="text" name="name" placeholder="" required autofocus>
+          <svg>
+            <use href="./img/icon/sprite.svg#icon-people"></use>
+          </svg>
+        </span>
       </label>
       <label class="modal-block">
-        <span>Телефон</span>
-        <input type="tel" name="tel" placeholder="">
-        <svg>
-          <use href="./img/icon/sprite.svg#icon-coll"></use>
-        </svg>
+        Телефон
+        <span>
+          <input type="tel" name="tel" placeholder="">
+          <svg>
+            <use href="./img/icon/sprite.svg#icon-coll"></use>
+          </svg>
+        </span>
       </label>
       <label class="modal-block">
-        <span>Почта</span>
-        <input type="email" name="email" placeholder="">
-        <svg>
-          <use href="./img/icon/sprite.svg#icon-letter"></use>
-        </svg>
+        Почта
+        <span>
+          <input type="email" name="email" placeholder="">
+          <svg>
+            <use href="./img/icon/sprite.svg#icon-email"></use>
+          </svg>
+        </span>
       </label>
       <label class="modal-block">
-        <span>Комментарий</span>
+        Комментарий
         <textarea name="coment" rows="10" placeholder="Введите текст"></textarea>
       </label>
       <div role="group" class="agree">
-        <input type="checkbox" name="agree" id="agree">
-        <label for="agree">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+        <input type="checkbox" name="agree" value="agree" id="agree" class="agree-input is-hidden">
+        <label for="agree" class="agree-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
       </div>
-      <button data-modal-close class="button-all modal-button">Отправить</button>
-      <button type="reset" class="icon-x">
+      <button class="button-all modal-button">Отправить</button>
+      <button data-modal-close type="reset" class="icon-x">
         <svg>
           <use href="./img/icon/sprite.svg#icon-close"></use>
         </svg>
